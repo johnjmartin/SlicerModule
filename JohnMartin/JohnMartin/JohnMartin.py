@@ -141,7 +141,7 @@ class JohnMartinWidget(ScriptedLoadableModuleWidget):
     pass
 
   def onSelect(self):
-    self.applyButton.enabled = self.inputSelector.currentNode() and self.outputSelector.currentNode()
+    self.applyButton.enabled = self.emSelector.currentNode() and self.opticalSelector.currentNode()
 
   def onApplyButton(self):
     emTipTransform = self.emSelector.currentNode()
